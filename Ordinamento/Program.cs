@@ -12,7 +12,7 @@ namespace Ordinamento
             string file = "ordinamenti.csv";
             using (StreamWriter w = new StreamWriter(file))
             {
-                w.WriteLine("Algoritmo;Dimensione;Tempo");
+                w.WriteLine("Algoritmo;Dimensione;Tempo ");
 
                 Random rnd = new Random();
                 int[] dimensioni = { 100, 500, 1000, 10000, 15000, 20000,30000, 40000, 50000, 60000, 70000, 80000, 90000 };
