@@ -37,6 +37,12 @@ namespace Ordinamento
                     elapsed = s.ElapsedMilliseconds;
                     w.WriteLine($"BubbleSort;{dim};{elapsed}");
                     Console.WriteLine($"{dim}");
+                    s.Start();
+                    a = MetodiOrdinamenti.ArraySort.Array_Sort(a);
+                    s.Stop();
+                    elapsed = s.ElapsedMilliseconds;
+                    w.WriteLine($"QuickSort;{dim};{elapsed}");
+                    Console.WriteLine($"{dim}");
                 }
                 w.Flush();
             }
